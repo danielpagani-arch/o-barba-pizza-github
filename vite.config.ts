@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/',
+  base: '/o-barba-pizza-github/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
@@ -14,7 +14,7 @@ export default defineConfig({
   },
   root: path.resolve(import.meta.dirname),
   build: {
-    outDir: path.resolve(import.meta.dirname, 'dist'),
+   outDir: path.resolve(import.meta.dirname, 'docs'),
     emptyOutDir: true,
   },
   server: {
@@ -26,3 +26,4 @@ export default defineConfig({
     port: 4173,
   },
 });
+
