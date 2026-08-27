@@ -135,7 +135,7 @@ function Hero() {
           </div>
         </div>
         <div className="hero-image-frame reveal" style={{ transitionDelay: '120ms' }}>
-          <img className="hero-image" src="/barba-pizza.jpg" alt="Pizza artesanal de longa fermentação com borda dourada em uma mesa escura" />
+         <img className="hero-image" src={`${import.meta.env.BASE_URL}barba-pizza.jpg`} alt="Pizza artesanal de longa fermentação com borda dourada em uma mesa escura" />
           <span className="hero-image-caption">Feita para chegar quente</span>
         </div>
       </div>
@@ -159,7 +159,7 @@ function Story() {
         </div>
       </div>
       <div className="container-wide mt-20 reveal" style={{ transitionDelay: '180ms' }}>
-        <img className="w-full object-cover" style={{ height: 'min(440px, 52vw)', minHeight: '260px' }} src="/barba-kitchen.jpg" alt="Mãos de pizzaiolo abrindo massa ao lado do forno quente" loading="lazy" />
+      <img className="w-full object-cover" style={{ height: 'min(440px, 52vw)', minHeight: '260px' }} src={`${import.meta.env.BASE_URL}barba-kitchen.jpg`} alt="Mãos de pizzaiolo abrindo massa ao lado do forno quente" loading="lazy" />
       </div>
     </section>
   );
